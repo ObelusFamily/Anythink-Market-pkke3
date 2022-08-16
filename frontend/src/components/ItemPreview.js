@@ -21,7 +21,7 @@ const ItemPreview = (props) => {
   const item = props.item;
   let src = item.image;
   if (! src) {
-    src = "placeholder.png"
+    src = "placeholder.png";
   }
 
   const handleClick = (ev) => {
@@ -40,7 +40,7 @@ const ItemPreview = (props) => {
     >
       <img
         alt="item"
-        src="placeholder.png"
+        src={src}
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
       />
